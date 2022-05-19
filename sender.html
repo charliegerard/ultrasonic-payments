@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultrasonic payment demo - Merchant's page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="quiet/quiet.js"></script>
+    <script>
+      Quiet.init({
+        profilesPrefix: "./quiet/",
+        memoryInitializerPrefix: "./quiet/",
+        libfecPrefix: "./quiet/",
+      });
+    </script>
+
+    <script src="sendtext.js"></script>
+    <script
+      async
+      type="text/javascript"
+      src="quiet/quiet-emscripten.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <h1>Merchant (Transmitter)</h1>
+      <h2>Send a Stripe payment link via ultrasounds</h2>
+
+      <p>
+        Paste a payment link in the input below or use the default one provided
+        to try this out!
+      </p>
+
+      <p class="volume">
+        Make sure your device's volume is set to 50% or less.
+      </p>
+
+      <div data-quiet-send-text-warning></div>
+      <div class="form-group">
+        <input
+          type="text"
+          data-quiet-text-input
+          value="https://buy.stripe.com/test_00gfZ73t04dxaGI3cc"
+        />
+        <button
+          data-quiet-send-text-button
+          data-quiet-sending-text="Sending..."
+          data-quiet-profile-name="ultrasonic2"
+        >
+          Send ultrasonic payment link
+        </button>
+      </div>
+    </main>
+    <footer>
+      This is not a real Stripe product - built by
+      <a href="https://twitter.com/stripedev">@StripeDev</a>
+    </footer>
+  </body>
+</html>

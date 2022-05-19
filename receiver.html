@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultrasonic payment demo - Customer's page</title>
+    <script type="text/javascript" src="quiet/quiet.js"></script>
+    <script>
+      Quiet.init({
+        profilesPrefix: "./quiet/",
+        memoryInitializerPrefix: "./quiet/",
+        libfecPrefix: "./quiet/",
+      });
+    </script>
+    <script
+      async
+      type="text/javascript"
+      src="quiet/quiet-emscripten.js"
+    ></script>
+    <script src="receivetext.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Customer (Receiver)</h1>
+      <h2>Receive a Stripe payment link via ultrasounds</h2>
+      <p>
+        Once the Payment Link is received, you will automatically be redirected
+        to the Checkout page.
+      </p>
+
+      <div
+        class="form-group"
+        data-quiet-profile-name="ultrasonic2"
+        data-quiet-receive-text
+      >
+        <div data-quiet-receive-text-warning></div>
+        <button
+          data-quiet-receive-text-button
+          data-quiet-receiving-text="Listening..."
+        >
+          Start Ultrasonic Receiver
+        </button>
+      </div>
+
+      <p class="warning"></p>
+    </main>
+    <footer>
+      This is not a real Stripe product - built by
+      <a href="https://twitter.com/stripedev">@StripeDev</a>
+    </footer>
+  </body>
+</html>

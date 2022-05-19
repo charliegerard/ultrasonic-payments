@@ -1,0 +1,86 @@
+body {
+  background: rgba(243, 244, 246, 1);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 2.25rem;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3em;
+}
+
+h1 {
+  color: rgba(79, 70, 229, 1);
+  font-weight: 600;
+  font-size: 1.875rem;
+}
+
+h2 {
+  color: rgba(75, 85, 99, 1);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+p {
+  color: rgba(75, 85, 99, 1);
+  font-weight: 300;
+  line-height: 1.3rem;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.5em;
+  width: fit-content;
+  display: inline-block;
+}
+
+button {
+  background: #5469d4;
+  color: white;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  background: #5469d4;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 2em;
+  margin-right: 2em;
+  display: inline-block;
+}
+
+a:hover,
+button:hover {
+  background: #5f77ef;
+}
+
+footer {
+  position: fixed;
+  font-weight: 300;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(75, 85, 99, 1);
+}
+
+footer a {
+  background: none;
+  color: rgba(75, 85, 99, 1);
+  padding: initial;
+  text-decoration: underline;
+  margin-top: initial;
+}
+
+.volume {
+  font-style: italic;
+}
