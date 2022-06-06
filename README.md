@@ -6,12 +6,18 @@ I've been experimenting with ultrasonic data transmission in the context of ultr
 
 It is relying on [quiet.js](https://github.com/quiet/quiet-js/) and sends data via inaudible sounds.
 
-If you want to try it out, play around with the live demo, and if you want to learn more, check out the blog post.
+![GIF showing how I am sending a Stripe Payment Link via ultrasound to my phone](ultrasonic-payment-link-demo.gif)
+
+If you want to try it out, play around with the [live demo](https://ultrasonic-payments.netlify.app), and if you want to learn more, check out the [blog post](https://charliegerard.dev/blog/ultrasonic-payments).
 
 ## How to run
 
 If you want to run this locally, start by cloning this repository, and start a Python server with:
 
 ```bash
+# Using Python 2
 python -m SimpleHTTPServer 3000
+
+# Using Python 3
+python -m http.server 3000
 ```
